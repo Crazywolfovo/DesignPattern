@@ -11,7 +11,7 @@ public class LazySingleton {
      * 防止外部的new操作
      */
     private LazySingleton() {
-        if(instance != null){
+        if (instance != null) {
             throw new RuntimeException("单例构造器禁止反射调用");
         }
     }

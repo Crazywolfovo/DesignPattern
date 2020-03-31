@@ -12,7 +12,7 @@ public class CustomThread implements Runnable {
 //        ContainerSingleton.putInstance("object", new Object());
 //        Object instance = ContainerSingleton.getInstance("object");
 
-         ThreadLocalInstance instance = ThreadLocalInstance.getInstance();
+        ThreadLocalInstance instance = ThreadLocalInstance.getInstance();
 
         System.out.println(Thread.currentThread().getName() + " " + instance);
     }
