@@ -1,9 +1,5 @@
 package com.designpattern.pattern.structural.decorator;
 
-import com.designpattern.pattern.structural.decorator.ABattercake;
-import com.designpattern.pattern.structural.decorator.Battercake;
-import com.designpattern.pattern.structural.decorator.EggDecorator;
-import com.designpattern.pattern.structural.decorator.SausageDecorator;
 import org.junit.Test;
 
 /**

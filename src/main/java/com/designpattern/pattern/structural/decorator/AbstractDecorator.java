@@ -9,6 +9,9 @@ public abstract class AbstractDecorator extends ABattercake {
         this.aBattercake = aBattercake;
     }
 
+    /**
+     * 子类必须实现的方法
+     */
     protected abstract void doSomething();
 
     @Override
