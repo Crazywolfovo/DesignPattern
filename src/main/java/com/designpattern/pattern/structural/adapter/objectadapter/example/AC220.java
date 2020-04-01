@@ -1,8 +1,5 @@
 package com.designpattern.pattern.structural.adapter.objectadapter.example;
 
-/**
- * Created by geely
- */
 public class AC220 {
     public int outputAC220V() {
         int output = 220;
