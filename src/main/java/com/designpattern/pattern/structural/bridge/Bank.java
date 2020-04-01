@@ -12,6 +12,7 @@ public abstract class Bank {
 
     /**
      * 这个抽象方法，会委托给Account接口中的openAccount();
+     *
      * @return
      */
     abstract Account openAccount();
