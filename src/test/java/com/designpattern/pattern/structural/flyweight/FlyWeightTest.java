@@ -11,8 +11,8 @@ public class FlyWeightTest {
     @Test
     public void test() {
 
-        for(int i=0; i<10; i++){
-            String department = departments[(int)(Math.random() * departments.length)];
+        for (int i = 0; i < 10; i++) {
+            String department = departments[(int) (Math.random() * departments.length)];
             Manager manager = (Manager) EmployeeFactory.getManager(department);
             manager.report();
 
