@@ -2,9 +2,7 @@ package com.designpattern.pattern.behavioral.templatemethod;
 
 import org.junit.Test;
 
-/**
- * Created by geely
- */
+
 public class TemplateMethodTest {
 
     @Test
@@ -19,7 +17,5 @@ public class TemplateMethodTest {
         ACourse feCourse = new FECourse(false);
         feCourse.makeCourse();
         System.out.println("前端课程end---");
-
-
     }
 }
