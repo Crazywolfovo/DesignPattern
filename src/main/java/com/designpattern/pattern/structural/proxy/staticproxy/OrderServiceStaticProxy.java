@@ -5,7 +5,10 @@ import com.designpattern.pattern.structural.proxy.service.IOrderService;
 import com.designpattern.pattern.structural.proxy.service.Order;
 import com.designpattern.pattern.structural.proxy.service.OrderServiceImpl;
 
-
+/**
+ * 静态代理，不依赖反射技术，每一个被代理类
+ * 都需要一个对应的代理类，导致类数量多一倍
+ */
 public class OrderServiceStaticProxy {
 
     private IOrderService iOrderService = new OrderServiceImpl();
@@ -22,7 +25,7 @@ public class OrderServiceStaticProxy {
         int dbRouter = userId % 2;
         System.out.println("静态代理分配到【db" + dbRouter + "】处理数据");
 
-        //todo 设置dataSource;
+        // 设置dataSource;
         DataSourceContextHolder.setDBType("db" + String.valueOf(dbRouter));
         System.out.println("静态代理 before code");
     }

@@ -7,18 +7,22 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-
-public class OrderServiceDynamicProxy implements InvocationHandler {
+/**
+ * 动态代理，将所有的代理类合并为一个，
+ * 利用这个动态代理类，为被代理对象
+ * 生成一个符合条件的代理类的对象以供使用
+ */
+public class DynamicProxy implements InvocationHandler {
 
     private Object target;
 
-    public OrderServiceDynamicProxy(Object target) {
+    public DynamicProxy(Object target) {
         this.target = target;
     }
 
     public Object bind() {
-        Class cls = target.getClass();
-        return Proxy.newProxyInstance(cls.getClassLoader(), cls.getInterfaces(), this);
+        Class clazz = target.getClass();
+        return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
     }
 
     @Override
