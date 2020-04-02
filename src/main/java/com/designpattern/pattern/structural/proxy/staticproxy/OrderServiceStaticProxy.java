@@ -1,9 +1,9 @@
 package com.designpattern.pattern.structural.proxy.staticproxy;
 
+import com.designpattern.pattern.structural.proxy.db.DataSourceContextHolder;
 import com.designpattern.pattern.structural.proxy.service.IOrderService;
 import com.designpattern.pattern.structural.proxy.service.Order;
 import com.designpattern.pattern.structural.proxy.service.OrderServiceImpl;
-import com.designpattern.pattern.structural.proxy.db.DataSourceContextHolder;
 
 
 public class OrderServiceStaticProxy {
