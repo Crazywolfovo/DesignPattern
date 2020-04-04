@@ -3,6 +3,7 @@ package com.designpattern.pattern.behavioral.templatemethod;
 
 public class FECourse extends ACourse {
     private boolean needWriteArticleFlag = false;
+
     @Override
     void packageCourse() {
         System.out.println("提供课程的前端代码");
