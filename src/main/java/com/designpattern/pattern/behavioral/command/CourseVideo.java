@@ -7,11 +7,11 @@ public class CourseVideo {
         this.name = name;
     }
 
-    public void open(){
+    public void open() {
         System.out.println(this.name + "课程视频开放");
     }
 
-    public void close(){
+    public void close() {
         System.out.println(this.name + "课程视频关闭");
     }
 }

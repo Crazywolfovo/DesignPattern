@@ -5,7 +5,7 @@ import org.junit.Test;
 public class CommandTest {
 
     @Test
-    public void test(){
+    public void test() {
         CourseVideo courseVideo = new CourseVideo("Java设计模式");
         OpenCourseVideoCommand open = new OpenCourseVideoCommand(courseVideo);
         CloseCourseVideoCommand close = new CloseCourseVideoCommand(courseVideo);

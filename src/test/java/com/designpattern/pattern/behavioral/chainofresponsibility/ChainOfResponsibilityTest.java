@@ -5,7 +5,7 @@ import org.junit.Test;
 public class ChainOfResponsibilityTest {
 
     @Test
-    public void test(){
+    public void test() {
         Approver articleApprover = new ArticleApprover();
         Approver videoApprover = new VideoApprover();
 

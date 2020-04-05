@@ -1,6 +1,6 @@
 package com.designpattern.pattern.behavioral.command;
 
-public class OpenCourseVideoCommand implements Command{
+public class OpenCourseVideoCommand implements Command {
 
     private CourseVideo courseVideo;
 

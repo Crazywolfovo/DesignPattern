@@ -8,7 +8,7 @@ import java.util.List;
 public class VisitorTest {
 
     @Test
-    public void test(){
+    public void test() {
         List<Course> courseList = new ArrayList<>();
         FreeCourse freeCourse = new FreeCourse();
         freeCourse.setName("免费课程");
@@ -20,7 +20,7 @@ public class VisitorTest {
         courseList.add(freeCourse);
         courseList.add(codingCourse);
 
-        for (Course course: courseList) {
+        for (Course course : courseList) {
             course.accpet(new Visitor());
         }
     }
